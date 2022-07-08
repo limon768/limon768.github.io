@@ -58,15 +58,18 @@ To run the script
 Tell me the time -> tells the current time
 
 search -> search something in web
-    opens up a browser to show result
-    Default browser is Google Chrome
+    
+        - opens up a browser to show result
+    
+        - Default browser is Google Chrome
 
 Subreddit -> search in reddit
 
 Find Location -> open up location in google map
 
 Play Music -> Plays music in youtube
-    opens up a browser to play music
+        
+        - opens up a browser to play music
 
 Games -> Guess the number game with AI
 
