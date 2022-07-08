@@ -6,9 +6,9 @@ excerpt:
 comments: false
 ---
 
-Hello there visitor 😁! I am currently studying CyberSecurity 😎. I am always open to trying out new experiences and opportunities and trying out new tools and techniques. I like to play games , watch anime and read books in passtime. 
+Hello there visitor 😁! I'm always open to new opportunities in order to gain experience with unfamiliar tools and techniques, within the realm of cyber. On another note I like to play games , watch anime and read books in my freetime. 
 
-This is a bloging website where I will try to upload CTF 🏴‍☠️ write ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. 
+This is a blogging website where I will try to upload CTF 🏴‍☠️ write ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. 
 
 
 ### **Links**

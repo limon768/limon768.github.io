@@ -15,21 +15,21 @@ The script requires python 3.X. and pip
 
 You need the following modules installed for Akane
 
-- Speech_recognition
+Speech_recognition
 
-`pip install SpeechRecognition`
+Google Text-to-Speech
 
-- Google Text-to-Speech
+Playsound
 
-`pip install gTTS`
+Requests
 
-- Playsound
+```python
+pip install SpeechRecognition
+pip install gTTS
+pip install playsound
+pip install requests
+```
 
-`pip install playsound`
-
-- Requests
-
-`pip install requests`
 
 ```python
 import speech_recognition as sr
