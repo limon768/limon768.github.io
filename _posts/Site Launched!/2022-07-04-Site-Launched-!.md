@@ -19,4 +19,4 @@ Yayyyyyy!! Finally my own website🤓🥳.
 
 **Upload Time**
 
-My goal is to upload every 2 weeks. Depending on school that it might change.
+My goal is to upload every 2 weeks. Depending on school this might change, but rest asured there is gonna be good content coming.
