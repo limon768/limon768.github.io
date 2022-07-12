@@ -89,7 +89,7 @@ Extension for different virtual machine hypervisors →
 
 ***A. WinXPSP2x86***
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" pslist`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 pslist`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/3.png)
 
@@ -109,7 +109,7 @@ Extension for different virtual machine hypervisors →
 
 ***A. csrss.exe***
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" psxview`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 psxview`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/5.png)
 
@@ -117,7 +117,7 @@ Extension for different virtual machine hypervisors →
 
 ***A. csrss.exe***
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" ldrmodules`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 ldrmodules | grep False`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/6.png)
 
@@ -125,7 +125,7 @@ Extension for different virtual machine hypervisors →
 
 ***A.*** 
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" apihooks`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 apihooks`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/7.png)
 
@@ -143,7 +143,7 @@ Extension for different virtual machine hypervisors →
 
 ***A. ***
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" dlllist`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 dlllist`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/10.png)
 
