@@ -81,7 +81,7 @@ Extension for different virtual machine hypervisors →
 
 ***A.*** 
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" imageinfo`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 imageinfo`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/2.png)
 
@@ -141,7 +141,7 @@ Extension for different virtual machine hypervisors →
 
 ***Q12. Last but certainly not least we can view all of the DLLs loaded into memory. DLLs are shared system libraries utilized in system processes. These are commonly subjected to hijacking and other side-loading attacks, making them a key target for forensics. Let's list all of the DLLs in memory now with the command `dlllist`***
 
-A. 
+***A. ***
 
 `./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" dlllist`
 
@@ -149,7 +149,7 @@ A.
 
 ***Q13. Now that we've seen all of the DLLs running in memory, let's go a step further and pull them out! Do this now with the command `volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>` where the PID is the process ID of the infected process we identified earlier (questions five and six). How many DLLs does this end up pulling?***
 
-A. 12 
+***A. 12 ***
 
 `./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 --pid=584 dlldump -D /home/avi/Downloads/files2/`
 
