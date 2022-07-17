@@ -81,7 +81,7 @@ Extension for different virtual machine hypervisors →
 
 ***A.*** 
 
-`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" --profile=WinXPSP2x86 imageinfo`
+`./volatility -f "/home/avi/Downloads/New Folder/cridex.vmem" imageinfo`
 
 ![](https://photos.squarezero.dev/file/abir-images/Volatility/2.png)
 
