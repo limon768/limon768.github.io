@@ -30,7 +30,7 @@ Download the zip file. Unzip the file with password →  **"cyberdefenders.org"*
 
 `shasum Triage-Memory.mem`
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/1.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/01.png)
 
 ***Q2. What volatility profile is the most appropriate for this machine? (ex: Win10x86_14393)***
 
@@ -38,7 +38,7 @@ Download the zip file. Unzip the file with password →  **"cyberdefenders.org"*
 
 `./volatility -f "/home/avi/Downloads/vol/Triage-Memory.mem" imageinfo`
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/2.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/02.png)
 
 ***Q3. What was the process ID of notepad.exe?***
 
@@ -46,7 +46,7 @@ Download the zip file. Unzip the file with password →  **"cyberdefenders.org"*
 
 `./volatility -f "/home/avi/Downloads/vol/Triage-Memory.mem" --profile=Win7SP1x64 pslist | grep notepad.exe`
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/3.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/03.png)
 
 ***Q4. Name the child process of wscript.exe***
 
@@ -54,7 +54,7 @@ Download the zip file. Unzip the file with password →  **"cyberdefenders.org"*
 
 `./volatility -f "/home/avi/Downloads/vol/Triage-Memory.mem" --profile=Win7SP1x64 pstree`
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/4.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/04.png)
 
 ***Q5. What was the IP address of the machine at the time the RAM dump was created?***
 
@@ -68,14 +68,14 @@ Download the zip file. Unzip the file with password →  **"cyberdefenders.org"*
 
 `./volatility -f "/home/avi/Downloads/vol/Triage-Memory.mem" --profile=Win7SP1x64 netscan`
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/5.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/05.png)
 
 
 ***Q7.  How many processes are associated with VCRUNTIME140.dll?***
 
 ***A. 5***
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/6.png)
+![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/06.png)
 
 
 ***NOTE: For some reason its not showing all the Process. I did some research but couldn’t find a solution. I will update the write up if i find a solution.***
