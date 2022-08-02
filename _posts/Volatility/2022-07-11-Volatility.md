@@ -6,7 +6,7 @@ tags: [Volatility, forensics , TryHackMe, Writeup]
 description: Learn how to perform memory forensics with Volatility!
 ---
 
-
+![](https://photos.squarezero.dev/file/abir-images/Volatility/logo.png)
 
 # Volatility
 
