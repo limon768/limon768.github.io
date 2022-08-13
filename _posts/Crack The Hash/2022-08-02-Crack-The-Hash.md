@@ -14,7 +14,7 @@ description: Write Up for TryHackMe room Crack The Hash
 
 Room Name → **Crack the hash**
 
-Room Link → [https://tryhackme.com/room/crackthehash](https://tryhackme.com/room/crackthehash)
+Link → [https://tryhackme.com/room/crackthehash](https://tryhackme.com/room/crackthehash)
 
 Author → [Ben](https://tryhackme.com/p/ben)
 
