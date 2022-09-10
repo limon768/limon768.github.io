@@ -22,11 +22,14 @@ Description → You found a secret server located under the deep sea. Your task 
 
 
 I start port scanning with [Nmap]() to find existing ports and services.
+
 `sudo nmap -sC -sV -oA nmap/agentsudo 10.10.133.149`
-|Ports|Service|
-|21|FTP (vsftpd 3.0.3)|
-|22|SSH (OpenSSH 7.6p1|
-|80|HTTP (Apache httpd 2.4.29|
+
+
+|Ports|Service
+|21|FTP (vsftpd 3.0.3)
+|22|SSH (OpenSSH 7.6p1
+|80|HTTP (Apache httpd 2.4.29
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/1.png)
 
