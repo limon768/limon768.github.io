@@ -94,6 +94,6 @@ Lets dump the hash.
 
 `F4FF64C8BAAC57D22F22EDC681055BA6`
 
-And finally, I got out the last flag!
+And finally I got the final flag using the hash as password.
 
 **FLAG 3:  flag{w3IL_3rd_stage_was_easy}**
