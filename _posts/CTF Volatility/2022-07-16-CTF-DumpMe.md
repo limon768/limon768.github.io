@@ -8,7 +8,7 @@ description: Write Up for DumpMe Cyber Defense
 
 ![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/logo.jpg)
 
-# DumpMe
+
 
 Box Name → DumpMe
 

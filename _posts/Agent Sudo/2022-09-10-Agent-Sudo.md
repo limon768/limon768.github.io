@@ -6,7 +6,7 @@ tags: [CVE, Agent Sudo, TryHackMe, Writeup, CTF]
 description: Write Up for TryHackMe room Agent Sudo
 ---
 
-# Agent Sudo
+
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/logo.png)
 
