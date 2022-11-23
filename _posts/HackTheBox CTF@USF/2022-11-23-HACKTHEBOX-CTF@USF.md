@@ -78,7 +78,8 @@ So I changed the username to `admin`, kid to `1`, and add the secret code → `y
 After replacing the cookie I got the flag.
 
 ![](https://photos.squarezero.dev/file/abir-images/HTBUSF2022/13.png)
-**Flag** → `HTB{t4nn3n_fr4m3d_th3_mcFly}`
+
+**[Flag]()** → `HTB{t4nn3n_fr4m3d_th3_mcFly}`
 
 # [REV]()
 
@@ -118,7 +119,7 @@ I dump it both files.
 
 I checked the DLL in `dnspy` and found the following code.
 
-`Original Code`
+[Original Code]() → 
 
 ```vbnet
 using System;
@@ -225,7 +226,7 @@ namespace Rans
 
 I’m not good with coding much, But my teammate `JAY` fixed the code and we decoded the file with the code.
 
-`Decryption Code`
+[Decryption Code]() →
 
 ```vbnet
 using System;
