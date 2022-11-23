@@ -72,7 +72,6 @@ The main goal of this challenge is to change the user to admin. If we look at th
 
 So I changed the username to `admin`, kid to `1`, and add the secret code → `yEgEoSOKXmT50LM`
 
-**TIP** → Usually Admin is the first user in a database, that’s why I used kid = 1
 
 ![](https://photos.squarezero.dev/file/abir-images/HTBUSF2022/12.png)
 
