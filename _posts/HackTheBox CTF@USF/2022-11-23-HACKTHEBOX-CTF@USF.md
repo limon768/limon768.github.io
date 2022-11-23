@@ -33,7 +33,7 @@ I looks like we were directly acting with command line. So I decided to use comm
 
 **[Flag]()** → `HTB{d0nt_p4ss_Us3r_Inpu7s_t0_c0mm4ndl1n3}`
 
-## Challenge → DeLorean Clock
+## Challenge → MadDog Memorial
 
 **Description** → You have been tasked with the pentesting engagement on the memorial website of the great Buford "Mad Dog" Tannen, who was a true patriotic countryman and the pride of Hill Valley! The Tannen family has asked you to find out any loopholes in the system and see if the admin account can be compromised. They don't want any teenager or a mad scientist to break in and discover the secrets they are hiding!
 
