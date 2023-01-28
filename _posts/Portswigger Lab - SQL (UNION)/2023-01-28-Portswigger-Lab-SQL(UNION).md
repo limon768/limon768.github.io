@@ -1,7 +1,7 @@
 ---
 title: Portswigger Lab SQLi (UNION)
-date: 2022-08-02 09:45:47 +07:00
-modified: 2022-01-28 09:45:47 +07:00
+date: 2023-01-28 09:45:47 +07:00
+modified: 2023-01-28 09:45:47 +07:00
 tags: [Portswigger, SQLi , Writeup]
 description: Write Up for Portswigger Lab SQLi
 ---
