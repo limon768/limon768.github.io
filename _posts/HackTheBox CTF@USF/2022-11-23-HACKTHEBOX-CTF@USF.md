@@ -11,6 +11,6 @@ We participated in our local HTB-hosted USF CTF and we ended up being 1st! It wa
 
 ![](https://photos.squarezero.dev/file/abir-images/HTBUSF2022/1.png)
 
-Cant wait to play the next USF HTB event as [PROTOSEC]()
+Cant wait to play the next USF HTB event as [PROTOSEC](https://twitter.com/protos3c)
 
 ![](https://photos.squarezero.dev/file/abir-images/HTBUSF2022/protosec.jpg)
