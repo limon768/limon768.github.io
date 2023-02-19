@@ -70,13 +70,20 @@ $hover_color: red;
     height: $image_dimensions;
   }
   position: fixed;
-  right: 0px;
-  bottom: 0px;
+  right: 4%;
+  bottom: 4%;
   border: white 2px solid;
   border-radius: 100%;
   margin: 8px;
   background: $dark-light;
   &:hover {
     border: $hover_color 3px solid;
+  }
+}
+
+@include media-query($on-mobile) {
+  #coffee_btn {
+    right: 0px;
+    bottom: 0px;
   }
 }
