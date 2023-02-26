@@ -51,27 +51,27 @@ To run the script
 
 ## Voice Commands
 
-"Help" -> Tells the user all the command available
+"Help" → Tells the user all the command available
 
- What is your name -> says name of the AI
+ What is your name → says name of the AI
 
-Tell me the time -> tells the current time
+Tell me the time → tells the current time
 
-search -> search something in web
+search → search something in web
     
         - opens up a browser to show result
     
         - Default browser is Google Chrome
 
-Subreddit -> search in reddit
+Subreddit → search in reddit
 
-Find Location -> open up location in google map
+Find Location → open up location in google map
 
-Play Music -> Plays music in youtube
+Play Music → Plays music in youtube
         
         - opens up a browser to play music
 
-Games -> Guess the number game with AI
+Games → Guess the number game with AI
 
 ## Project Link
 [Github](https://github.com/limon768/Akane-1.7)
