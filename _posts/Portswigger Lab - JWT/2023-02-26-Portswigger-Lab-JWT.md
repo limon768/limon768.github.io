@@ -1,8 +1,8 @@
 ---
 title: Portswigger Lab JWT
-date: 2023-02-26 09:45:47 +07:00
-modified: 2023-02-26 09:45:47 +07:00
-tags: [Portswigger, JWT , Writeup]
+date: 2023-02-26 01:45:47 +07:00
+modified: 2023-02-26 01:45:47 +07:00
+tags: [Portswigger, JWT, Writeup]
 description: Write Up for Portswigger Lab JWT
 ---
 
@@ -26,7 +26,7 @@ Let's login with the given credentials and intercept the request.
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/1.png)
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/2.png)
 
-Our Extension can automatically detect JSON token. Let's change the user to administrator. 
+Our Extension can automatically detect JSON tokens. Let's change the user to administrator. 
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/3.png)
 
@@ -44,11 +44,11 @@ Now let's repeat the process and each time the username needs to be changed.
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/8.png)
 
-NOTE → If you don't want to change your username every time, after intercepting the request send it to repeater. 
+NOTE → If you don't want to change your username every time, after intercepting the request send it to the repeater. 
 
 ##  JWT authentication bypass via flawed signature verification
 
-We can bypass just by changing `alg` parameter to none
+We can bypass this just by changing `alg` parameter to none
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/9.png)
 
@@ -63,7 +63,7 @@ After intercepting the request we can brute force a weak signing key using Hashc
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/10.png)
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/11.png)
 
-After finding the signing key we can sign out payload.
+After finding the signing key we can sign out the payload.
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/12.png)
 
@@ -86,7 +86,7 @@ The extension will automatically add the RSA Key to the cookie. We have Embed JW
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/17.png)
 
-Now after forwarding the request we have successfully bypassed to Admin.
+Now after forwarding the request we have successfully bypassed Admin.
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/18.png)
 
@@ -131,7 +131,7 @@ Let's also create a new Symmetric key.
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/26.png)
 
-Now lets copy the RSA key as a public PEM key. And then encode it with base64
+Now let's copy the RSA key as a public PEM key. And then encode it with base64
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/27.png)
 
@@ -162,7 +162,7 @@ Next, we can use these keys to make our forged key.
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/32.png)
 
-Now lets try one of the tampered JWT token. 
+Now let's try one of the tampered JWT tokens. 
 
 ![](https://photos.squarezero.dev/file/abir-images/Portswigger/JWT/33.png)
 
