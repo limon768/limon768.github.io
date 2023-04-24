@@ -21,5 +21,6 @@ This is a blogging website where I will try to upload CTF 🏴‍☠️ write up
 ![SquareZer0](https://www.hackthebox.eu/badge/image/479145)
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/limon768.png" alt="TryHackMe">
-<br></br>
+<br>
+<br>
 <a href='https://ko-fi.com/N4N64TH56' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
