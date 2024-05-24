@@ -6,9 +6,9 @@ excerpt:
 comments: false
 ---
 
-Hello there visitor 😁! I'm always open to new opportunities in order to gain experience with unfamiliar tools and techniques, within the realm of cyber. On another note I like to play games , watch anime and read books in my freetime. 
+Hello there visitor 😁! I'm always open to new opportunities to gain experience with unfamiliar tools and techniques, within the realm of cyber. On another note, I like to play games, watch anime and read books in my free time. 
 
-This is a blogging website where I will try to upload CTF 🏴‍☠️ write ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. 
+This is a blogging website where I will try to upload CTF 🏴‍☠️ write-ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. 
 
 
 ### **Links**

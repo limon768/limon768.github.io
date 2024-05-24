@@ -1,8 +1,8 @@
 # Site settings
 title: SquareZer0 # site title
 description: >- # site description
-  Hi! I am Abir who is a cybersecurity student within the US. Focusing on CTFs and researching. 
-  This is a bloging website where I will try to upload CTF 🏴‍☠️ write ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. <a href="https://github.com/limon768" target="_blank" rel="noopener">@github</a>.
+  Hi! I am Abir who is a cybersecurity professional. Focusing on CTFs and researching. 
+  This is a bloging website where I will try to upload CTF 🏴‍☠️ write ups, project documentation 📃 and talk about new technologies 👨🏿‍💻. 
 lang: en-US # default lang
 #timezone: America/New_York # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -13,7 +13,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Abir Limon # author name
   bio: >- # tell to the world
-    Hi! I am Abir who is a cybersecurity student within the US. Focusing on CTFs and researching. <a href="https://github.com/limon768" target="_blank" rel="noopener">@github</a>.
+    Hi! I am Abir who is a cybersecurity professional. Focusing on CTFs and researching. <a href="https://github.com/limon768" target="_blank" rel="noopener">@github</a>.
   username: SquareZer0 # general username
   github: limon768 # github username
   twitter: __squarezero__ # twitter username

@@ -3,17 +3,20 @@ title: Portswigger Lab SQLi (UNION)
 date: 2023-01-28 09:45:47 +07:00
 modified: 2023-01-28 09:45:47 +07:00
 tags: [Portswigger, SQLi , Writeup]
-description: Write Up for Portswigger Lab SQLi
+description: First 10 Labs of SQLi Lab based on UNION attack.
+image: https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png
 ---
+<img src="https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">SQL Injection (UNION)</font>
+
+31<sup>th</sup> November 2016
+
+​		Machine Author(s): [Portswigger](https://portswigger.net/web-security/all-labs)
+
+### Description:
+
+First 10 Labs of SQLi Lab based on UNION attack.
 
 
-![](https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png)
-
-Lab Name → **SQL Injection (UNION)**
-
-Lab Link → [https://portswigger.net/web-security/all-labs](https://portswigger.net/web-security/all-labs)
-
-Description → First 10 Labs of SQLi Lab based on UNION attack.
 
 ## SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 

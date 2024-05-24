@@ -3,22 +3,27 @@ title: Crack The Hash
 date: 2022-08-02 09:45:47 +07:00
 modified: 2022-08-02 09:45:47 +07:00
 tags: [Hashcat, Brute Force , TryHackMe, Writeup]
-description: Write Up for TryHackMe room Crack The Hash
+description: Cracking hashes challenges
+image: https://photos.squarezero.dev/file/abir-images/CrackTheHash/logo.jpeg
 ---
 
+![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)
+
+<img src="https://photos.squarezero.dev/file/abir-images/CrackTheHash/logo.jpeg" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">Crack The Hash</font>
+
+18<sup>th</sup> November 2018
+
+​		Machine Author(s): [Ben](https://tryhackme.com/p/ben)
 
 
 
+​		
 
-![](https://photos.squarezero.dev/file/abir-images/CrackTheHash/logo.jpeg)
+### Description:
 
-Room Name → **Crack the hash**
+Cracking hashes challenges
 
-Link → [https://tryhackme.com/room/crackthehash](https://tryhackme.com/room/crackthehash)
-
-Author → [Ben](https://tryhackme.com/p/ben)
-
-Description → Cracking hashes challenges
+### Description → 
 
 ## Level 1
 

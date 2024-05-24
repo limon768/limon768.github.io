@@ -3,19 +3,20 @@ title: Portswigger Lab JWT
 date: 2023-02-26 01:45:47 +07:00
 modified: 2023-02-26 01:45:47 +07:00
 tags: [Portswigger, JWT, Writeup]
-description: Write Up for Portswigger Lab JWT
+description: All Labs of JWT from Portswigger.
+image: https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png
 ---
 
 
-![](https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png)
+<img src="https://photos.squarezero.dev/file/abir-images/Portswigger/SQLiUnion/logo.png" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">JWT Attacks</font>
 
-Lab Name → **JWT**
+31<sup>th</sup> November 2016
 
-Lab Link → [https://portswigger.net/web-security/all-labs](https://portswigger.net/web-security/all-labs)
+​		Machine Author(s): [Portswigger](https://portswigger.net/web-security/all-labs)
 
-Description → All Labs of JWT from Portswigger.
+### Description:
 
-For all the labs I used Burpsuite with JWT Editor and JSON Web Token extensions.
+All Labs of JWT from Portswigger.
 
 # Apprentice
 

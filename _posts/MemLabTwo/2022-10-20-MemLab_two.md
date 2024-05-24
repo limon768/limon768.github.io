@@ -2,8 +2,9 @@
 title: MemLab 2
 date: 2022-10-20 12:45:47 +07:00
 modified: 2022-10-20 12:45:47 +07:00
-tags: [Volatility, forensics, MemLab , Writeup]
+tags: [Volatility, forensics, MemLabs , Writeup]
 description: Write Up for MemLab 2
+iamge: https://photos.squarezero.dev/file/abir-images/MemLab2/logo.png
 ---
 ![](https://photos.squarezero.dev/file/abir-images/MemLab2/logo.png)
 

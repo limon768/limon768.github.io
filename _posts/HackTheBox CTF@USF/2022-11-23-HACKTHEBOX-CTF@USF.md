@@ -4,6 +4,7 @@ date: 2022-11-23 09:45:47 +07:00
 modified: 2022-11-23 09:45:47 +07:00
 tags: [Web , HTB, USF, CTF ,Writeup]
 description: Write Up for HackTheBox CTF@USF
+image: https://photos.squarezero.dev/file/abir-images/HTBUSF2022/1.png
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/HTBUSF2022/logo.png)

@@ -3,18 +3,19 @@ title: CTF-DumpMe
 date: 2022-07-16 11:45:47 +07:00
 modified: 2022-07-16 11:45:47 +07:00
 tags: [CTF, forensics , Cyber Defender, Writeup, Volatility]
-description: Write Up for DumpMe Cyber Defense
+description: One of the SOC analysts took a memory dump from a machine infected with a meterpreter malware. As a Digital Forensicators, your job is to analyze the dump, extract the available indicators of compromise (IOCs) and answer the provided questions.
+image: https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/logo.jpg
 ---
 
-![](https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/logo.jpg)
+![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)
+
+<img src="https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/logo.jpg" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">DumpMe</font>
+
+18<sup>th</sup> November 2018
+
+​		Machine Author(s): [Champlain College](https://cyberdefenders.org/blueteam-ctf-challenges/65)
 
 
-
-Box Name → DumpMe
-
-Box Link → [https://cyberdefenders.org/blueteam-ctf-challenges/65](https://cyberdefenders.org/blueteam-ctf-challenges/65)
-
-Author → Champlain College
 
 Description → One of the SOC analysts took a memory dump from a machine infected with a meterpreter malware. As a Digital Forensicators, your job is to analyze the dump, extract the available indicators of compromise (IOCs) and answer the provided questions.
 
