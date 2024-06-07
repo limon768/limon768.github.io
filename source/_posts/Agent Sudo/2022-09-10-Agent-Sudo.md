@@ -1,21 +1,22 @@
 ---
+cover: https://photos.squarezero.dev/file/abir-images/AgentSudo/logo.png
+date: 2022-09-10 09:45:47+07:00
+machine_author:
+  link: https://tryhackme.com/p/DesKel
+  name: DesKel
+modified: 2022-09-10 09:45:47+07:00
+tags:
+- CVE
+- Agent Sudo
+- TryHackMe
+- Writeup
+- CTF
 title: Agent Sudo
-date: 2022-09-10 09:45:47 +07:00
-modified: 2022-09-10 09:45:47 +07:00
-tags: [CVE, Agent Sudo, TryHackMe, Writeup, CTF]
-description: You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.
-image: https://photos.squarezero.dev/file/abir-images/AgentSudo/logo.png
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)
 
-<img src="https://photos.squarezero.dev/file/abir-images/AgentSudo/logo.png" style="margin-left: 20px; zoom: 30%;" align=left />    	<font size="10">Agent Sudo</font>
-
-29<sup>th</sup> OCtober 2019
-
-​		Machine Author(s): [DesKel](https://tryhackme.com/p/DesKel)
-
-### Description: 
+ 
 You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.
 
 ## Recon
