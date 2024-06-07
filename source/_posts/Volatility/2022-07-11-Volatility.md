@@ -1,21 +1,21 @@
 ---
+cover: https://photos.squarezero.dev/file/abir-images/Volatility/logo.png
+date: 2022-07-11 11:45:47+07:00
+machine_author:
+  link: https://tryhackme.com/p/tryhackme
+  name: TryHackMe
+modified: 2022-07-11 11:45:47+07:00
+tags:
+- Volatility
+- forensics
+- TryHackMe
+- Writeup
 title: Volatility
-date: 2022-07-11 11:45:47 +07:00
-modified: 2022-07-11 11:45:47 +07:00
-tags: [Volatility, forensics , TryHackMe, Writeup]
-description: Learn how to perform memory forensics with Volatility!
-image: https://photos.squarezero.dev/file/abir-images/Volatility/logo.png
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)
 
-<img src="https://photos.squarezero.dev/file/abir-images/Volatility/logo.png" style="margin-left: 20px; zoom: 100%;" align=left />    	<font size="10">Volatility</font>
-
-8<sup>th</sup> November 2022
-
-​		Machine Author(s): [TryHackMe](https://tryhackme.com/p/tryhackme)
-
-### Description: 
+ 
 Learn how to perform memory forensics with Volatility!
 
 ## Intro
