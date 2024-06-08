@@ -30,7 +30,7 @@ I start port scanning with [Nmap]() to find existing ports and services.
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/1.png)
 
-I checked website and wants me to change my user-agent
+I checked the website and wants me to change my user-agent
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/02.png)
 
@@ -49,13 +49,13 @@ After changing my user name to “C” I got the following message.
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/3.png)
 
-Next, I decided to check out the FTP server. As I don’t have a password, I tried to brute-force using [Hydra]() and with [rockyou.txt]()
+Next, I decided to check out the FTP server. As I don’t have a password, I tried to brute-force using [Hydra]() and rockyou.txt()
 
 `hydra -t 3 -l chris -P /home/sz/Documents/rockyou.txt 10.10.133.149 ftp`
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/4.png)
 
-I got the password to log in FTP.
+I got the password to log in to FTP.
 
 After logging in I found two .png and one .txt file. After downloading them I checked out the message.
 
@@ -81,7 +81,7 @@ I found a zip file and brute-force that with [John]()
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/10.png)
 
-Now I have the user and password to ssh.
+Now I have the username and password to ssh.
 
 After logging in ssh I found the user flag
 
@@ -95,7 +95,7 @@ Inside I found an image
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/13_1.png)
 
-After a simple google reverse image search, I found this article.
+After a simple Google reverse image search, I found this article.
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/13.png)
 
@@ -109,7 +109,7 @@ After doing some research I have found the following CVE.
 
 ![](https://photos.squarezero.dev/file/abir-images/AgentSudo/15.png)
 
-I made a python file with the following code. 
+I made a Python file with the following code. 
 
 ```python
 #!/usr/bin/python3
