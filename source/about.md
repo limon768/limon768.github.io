@@ -1,5 +1,7 @@
 ---
 title: About Me!!
+date: 2022-10-20 09:45:47 +07:00
+modified: 2022-10-20 09:45:47 +07:00
 permalink: /about/
 layout: page
 excerpt: 
