@@ -1,9 +1,6 @@
 ---
-title: About Me!!
-date: 2022-10-20 09:45:47 +07:00
-modified: 2022-10-20 09:45:47 +07:00
-date: 2018-01-05 00:00:00
-type: "about"
+title: about
+date: 2022-10-20 09:45:47 +0700
 ---
 
 Hello there visitor 😁! I'm always open to new opportunities to gain experience with unfamiliar tools and techniques, within the realm of cyber. On another note, I like to play games, watch anime and read books in my free time. 
