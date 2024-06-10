@@ -7,7 +7,7 @@ machine_author:
   link: https://cyberdefenders.org/blueteam-ctf-challenges/65
   name: Champlain College
 tags: [CTF, forensics, Cyber Defender, Writeup, Volatility]
-title: CTF-DumpMe
+title: CTF-DumpMe - TryHackMe
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)

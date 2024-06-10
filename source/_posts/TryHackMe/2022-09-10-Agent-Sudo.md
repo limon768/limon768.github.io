@@ -7,7 +7,7 @@ machine_author:
   link: https://tryhackme.com/p/DesKel
   name: DesKel
 tags: [CVE, Agent Sudo, TryHackMe, Writeup, CTF]
-title: Agent Sudo
+title: Agent Sudo - TryHackMe
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)

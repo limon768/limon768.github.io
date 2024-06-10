@@ -29,7 +29,7 @@ password = ""
 ```
 
 
-Make Sure to **Less Secure App** on gmail is turned on
+Make Sure to **Less Secure App** on Gmail is turned on
 
 
 ![](https://photos.squarezero.dev/file/abir-images/Python-Keylogger/1.png)

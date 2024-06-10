@@ -7,7 +7,7 @@ machine_author:
   link: https://tryhackme.com/p/tryhackme
   name: TryHackMe
 tags: [Volatility, forensics, TryHackMe, Writeup]
-title: Volatility
+title: Volatility - TryHackMe
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)

@@ -7,7 +7,7 @@ machine_author:
   link: https://tryhackme.com/p/ben
   name: Ben
 tags: [Hashcat, Brute Force, TryHackMe, Writeup]
-title: Crack The Hash
+title: Crack The Hash - TryHackMe
 ---
 
 ![](https://photos.squarezero.dev/file/abir-images/htbasset/thmbanner.png)
