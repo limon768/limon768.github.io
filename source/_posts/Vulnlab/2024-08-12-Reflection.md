@@ -6,7 +6,7 @@ categories: Vulnlab
 machine_author: 
   name: r0BIT
   link: https://www.linkedin.com/in/robin-unglaub/
-tags: [Windows, Active Directory, MSSQL, SMB, Bloodhound, Privilege Escalation, LAPS, RBCD, Mimikatz, Secretsdump, Penetration Testing, Medium Difficulty, Enumeration, NTLM Relay, Credential Harvesting, Post-Exploitation]
+tags: [Reflection, Windows, Active Directory, MSSQL, SMB, Bloodhound, Privilege Escalation, LAPS, RBCD, Mimikatz, Secretsdump, Penetration Testing, Medium Difficulty, Enumeration, NTLM Relay, Credential Harvesting, Post-Exploitation]
 title: Reflection - Vulnlab
 ---
 
