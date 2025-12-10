@@ -2,7 +2,7 @@
 cover: https://photos.squarezero.dev/file/abir-images/Volatility/logo.png
 date: 2022-07-11 11:45:47+07:00
 modified: 2022-07-11 11:45:47+07:00
-categories: TryHackMe
+categories: [ Writeups, TryHackMe ]
 machine_author:
   link: https://tryhackme.com/p/tryhackme
   name: TryHackMe

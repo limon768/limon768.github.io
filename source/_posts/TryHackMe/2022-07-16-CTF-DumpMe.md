@@ -2,7 +2,7 @@
 cover: https://photos.squarezero.dev/file/abir-images/CTF-DumpMe/logo.jpg
 date: 2022-07-16 11:45:47 +07:00
 modified: 2022-07-16 11:45:47 +07:00
-categories: TryHackMe
+categories: [ Writeups, TryHackMe ]
 machine_author:
   link: https://cyberdefenders.org/blueteam-ctf-challenges/65
   name: Champlain College

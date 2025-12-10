@@ -2,7 +2,7 @@
 cover: https://photos.squarezero.dev/file/abir-images/AgentSudo/logo.png
 date: 2022-09-10 09:45:47+07:00
 modified: 2022-09-10 09:45:47+07:00
-categories: TryHackMe
+categories: [Writeups,TryHackMe]
 machine_author:
   link: https://tryhackme.com/p/DesKel
   name: DesKel

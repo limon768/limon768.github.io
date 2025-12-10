@@ -21,7 +21,7 @@ if theme.menu
             each val,lab in value 
               - const valArray = val.split('||')
               li
-                a.site-page.child(href=url_for(trim(valArray[0])))
+                a.site-page.child(href=url_for(trim(valArray[0])),target=valArray[2])
                   if valArray[1]
                     i.fa-fw(class=trim(valArray[1]))
                   span=' '+ lab

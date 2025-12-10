@@ -2,7 +2,7 @@
 cover: https://photos.squarezero.dev/file/abir-images/CrackTheHash/logo.jpeg
 date: 2022-08-02 09:45:47+07:00
 modified: 2022-08-02 09:45:47+07:00
-categories: TryHackMe
+categories: [ Writeups, TryHackMe ]
 machine_author:
   link: https://tryhackme.com/p/ben
   name: Ben
