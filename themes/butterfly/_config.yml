@@ -19,7 +19,7 @@ menu:
     HackTheBox: /categories/hackthebox/ || fas fa-folder
     TryHackMe: /categories/tryhackme/ || fas fa-folder
   Tools||fas fa-screwdriver-wrench:
-    Neon Recon: /tools/dorky.html || fas fa-hammer || _blank
+    Mr. Dorky: /tools/dorky.html || fas fa-hammer || _blank
   About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
