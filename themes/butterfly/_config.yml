@@ -15,9 +15,9 @@ menu:
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-folder-open
   Writeups||fas fa-list:
-    Vulnlab: /categories/vulnlab/ || fas fa-folder
-    HackTheBox: /categories/hackthebox/ || fas fa-folder
-    TryHackMe: /categories/tryhackme/ || fas fa-folder
+    Vulnlab: /categories/writeups/vulnlab/ || fas fa-folder
+    HackTheBox: /categories/writeups/hackthebox/ || fas fa-folder
+    TryHackMe: /categories/writeups/tryhackme/ || fas fa-folder
   Tools||fas fa-screwdriver-wrench:
     Mr. Dorky: /tools/dorky.html || fas fa-hammer || _blank
   About: /about/ || fas fa-heart
