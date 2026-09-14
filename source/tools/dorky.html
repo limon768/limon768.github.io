@@ -467,21 +467,15 @@
   <script>
     function fillPlaceholders(str, target, company) {
       let s = str;
-      if (target) {
-        s = s
-          .replaceAll("{target}", target)
-          .replaceAll("example.com", target)
-          .replaceAll("example[.]com", target)
-          .replaceAll('"example.com"', `"${target}"`)
-          .replaceAll('"example[.]com"', `"${target}"`);
-      }
+      if (target) s = s.replaceAll("{target}", target);
       if (company) s = s.replaceAll("{company}", company);
+      else if (target) s = s.replaceAll("{company}", target);
       return s;
     }
 
     const dorkTemplates = [
       {
-        category: "Exposed secrets in code (GitHub/GitLab)",
+        category: "Code & credential leaks",
         icon: "fa-key",
         external: true,
         dorks: [
@@ -492,19 +486,31 @@
           'site:github.com "{company}" "api_key"',
           'site:github.com "{company}" "private_key"',
           'site:github.com "{company}" "BEGIN RSA PRIVATE KEY"',
+          'site:github.com "{company}" "BEGIN OPENSSH PRIVATE KEY"',
+          'site:github.com "{company}" "BEGIN EC PRIVATE KEY"',
           'site:github.com "{company}" filename:.env',
           'site:github.com "{company}" filename:credentials',
           'site:github.com "{company}" "password"',
+          'site:github.com "{company}" "removed password"',
           'site:gitlab.com "{company}" "token"',
           'site:bitbucket.org "{company}" "password"',
+          'site:npmjs.com "{company}"',
+          'site:pypi.org "{company}"',
+          'site:pastebin.com "{target}"',
+          'site:jsfiddle.net "{target}"',
+          'site:codepen.io "{target}"',
+          'site:gist.github.com "{target}"',
+          'site:codebeautify.org "{target}"',
         ],
       },
       {
-        category: "Exposed config files & directories",
+        category: "Exposed files, configs & directories",
         icon: "fa-folder-open",
         external: false,
         dorks: [
           'intitle:"index of" "/.git"',
+          'intitle:"index of" .git/config',
+          'inurl:"/.git/config"',
           'intitle:"index of" /backup',
           'intitle:"index of" /config',
           'intitle:"index of" /uploads',
@@ -516,20 +522,15 @@
           'intitle:"server-status"',
           'inurl:"/.env"',
           'inurl:"/config.json"',
-        ],
-      },
-      {
-        category: "Sensitive files by extension",
-        icon: "fa-file-lines",
-        external: false,
-        dorks: [
-          "ext:env",
-          "ext:log",
-          "ext:bak | ext:backup | ext:old",
-          "ext:sql | ext:db",
-          "ext:conf | ext:cnf | ext:ini",
-          "ext:git | ext:svn",
-          "ext:htpasswd | ext:htaccess",
+          'inurl:.env',
+          'inurl:.log',
+          'inurl:.bak | inurl:.backup | inurl:.old',
+          'inurl:.sql | inurl:.db',
+          'inurl:.conf | inurl:.cnf | inurl:.ini',
+          'inurl:.git | inurl:.svn',
+          'inurl:.htaccess | inurl:.htpasswd',
+          'filetype:sql intext:"create table"',
+          'filetype:sql intext:password',
         ],
       },
       {
@@ -579,7 +580,7 @@
         ],
       },
       {
-        category: "Cloud storage exposures",
+        category: "Cloud & third-party storage",
         icon: "fa-cloud",
         external: true,
         dorks: [
@@ -590,13 +591,6 @@
           'site:firebaseio.com "{target}"',
           'site:dev.azure.com "{target}"',
           'site:jfrog.io "{target}"',
-        ],
-      },
-      {
-        category: "Public file shares & docs",
-        icon: "fa-share-nodes",
-        external: true,
-        dorks: [
           'site:drive.google.com "{target}"',
           'site:docs.google.com "{target}"',
           'site:sharepoint.com "{target}"',
@@ -607,7 +601,7 @@
         ],
       },
       {
-        category: "SQL injection-prone parameters",
+        category: "Injection & file inclusion parameters",
         icon: "fa-database",
         external: false,
         dorks: [
@@ -618,10 +612,22 @@
           "inurl:sid=",
           "inurl:item=",
           "inurl:product=",
+          "inurl:file=",
+          "inurl:include=",
+          "inurl:page=",
+          "inurl:doc=",
+          "inurl:folder=",
+          "inurl:template=",
+          "inurl:cmd=",
+          "inurl:exec=",
+          "inurl:run=",
+          "inurl:code=",
+          "inurl:ping=",
+          "inurl:query=",
         ],
       },
       {
-        category: "SSRF-prone parameters",
+        category: "SSRF, redirect & XSS parameters",
         icon: "fa-globe",
         external: false,
         dorks: [
@@ -632,13 +638,6 @@
           "inurl:fetch=",
           "inurl:proxy=",
           "inurl:callback=",
-        ],
-      },
-      {
-        category: "Open redirect-prone parameters",
-        icon: "fa-rotate",
-        external: false,
-        dorks: [
           "inurl:redirect=",
           "inurl:redir=",
           "inurl:return=",
@@ -646,40 +645,6 @@
           "inurl:next=",
           "inurl:goto=",
           "inurl:target=",
-        ],
-      },
-      {
-        category: "LFI/RFI-prone parameters",
-        icon: "fa-folder",
-        external: false,
-        dorks: [
-          "inurl:file=",
-          "inurl:include=",
-          "inurl:page=",
-          "inurl:doc=",
-          "inurl:folder=",
-          "inurl:path=",
-          "inurl:template=",
-        ],
-      },
-      {
-        category: "RCE-prone parameters",
-        icon: "fa-terminal",
-        external: false,
-        dorks: [
-          "inurl:cmd=",
-          "inurl:exec=",
-          "inurl:run=",
-          "inurl:code=",
-          "inurl:ping=",
-          "inurl:query=",
-        ],
-      },
-      {
-        category: "XSS-prone parameters",
-        icon: "fa-bolt",
-        external: false,
-        dorks: [
           "inurl:q=",
           "inurl:search=",
           "inurl:keyword=",
@@ -717,22 +682,10 @@
         icon: "fa-file-shield",
         external: false,
         dorks: [
-          'ext:pdf | ext:doc | ext:docx | ext:xls | ext:xlsx intext:"confidential"',
-          'ext:pdf | ext:doc | ext:docx intext:"internal use only"',
-          'ext:pdf | ext:doc | ext:docx intext:"do not distribute"',
-          'ext:pdf | ext:doc | ext:docx intext:"proprietary"',
-        ],
-      },
-      {
-        category: "Code leaks on paste sites",
-        icon: "fa-code",
-        external: true,
-        dorks: [
-          'site:pastebin.com "{target}"',
-          'site:jsfiddle.net "{target}"',
-          'site:codepen.io "{target}"',
-          'site:gist.github.com "{target}"',
-          'site:codebeautify.org "{target}"',
+          'filetype:pdf intext:"confidential" | filetype:doc intext:"confidential" | filetype:docx intext:"confidential" | filetype:xls intext:"confidential" | filetype:xlsx intext:"confidential"',
+          'filetype:pdf intext:"internal use only" | filetype:doc intext:"internal use only" | filetype:docx intext:"internal use only"',
+          'filetype:pdf intext:"do not distribute" | filetype:doc intext:"do not distribute" | filetype:docx intext:"do not distribute"',
+          'filetype:pdf intext:"proprietary" | filetype:doc intext:"proprietary" | filetype:docx intext:"proprietary"',
         ],
       },
       {
@@ -744,6 +697,29 @@
           'site:hackerone.com "{company}"',
           'site:bugcrowd.com "{company}"',
           'inurl:/security.txt intext:"bounty"',
+        ],
+      },
+      {
+        category: "Exposed services & control panels",
+        icon: "fa-server",
+        external: false,
+        dorks: [
+          'intitle:"Dashboard [Jenkins]"',
+          'intitle:"Apache Tomcat"',
+          'intitle:"Welcome to XAMPP"',
+          'intitle:"Kibana"',
+          'intitle:"elasticsearch"',
+          'inurl:9200',
+          'inurl:5601',
+        ],
+      },
+      {
+        category: "Recon & OSINT",
+        icon: "fa-binoculars",
+        external: false,
+        dorks: [
+          'intext:"@{target}"',
+          'site:*.{target} -www.{target}',
         ],
       },
       {
@@ -771,29 +747,142 @@
           "inurl:/crx/de",
         ],
       },
+      {
+        category: "AI chat & conversation sharing",
+        icon: "fa-robot",
+        external: true,
+        dorks: [
+          'site:chatgpt.com/share "{company}"',
+          'site:chat.openai.com/share "{company}"',
+          'site:claude.ai/share "{company}"',
+          'site:grok.com/share "{company}"',
+          'site:gemini.google.com/share "{company}"',
+          'site:chat.deepseek.com/share "{company}"',
+          'site:chat.mistral.ai/chat "{company}"',
+          'site:perplexity.ai/search "{company}"',
+          'site:chat.qwen.ai/s "{company}"',
+          'site:chat.z.ai/s "{company}"',
+          'site:huggingface.co/chat/conversation "{company}"',
+          'site:copilot.microsoft.com/shares "{company}"',
+          'site:poe.com/chat "{company}"',
+          'site:aistudio.google.com/app/prompts "{company}"',
+        ],
+      },
+      {
+        category: "Video meeting & collaboration links",
+        icon: "fa-video",
+        external: true,
+        dorks: [
+          'site:zoom.us/j "{company}"',
+          'site:zoom.us/rec/share "{company}"',
+          'site:teams.live.com/meet "{company}"',
+          'site:meet.google.com "{company}"',
+          'site:webex.com "{company}"',
+          'site:whereby.com "{company}"',
+          'site:calendly.com "{company}"',
+          'site:meet.jit.si "{company}"',
+          'site:gotomeeting.com/join "{company}"',
+        ],
+      },
+      {
+        category: "Shodan — Databases & caches",
+        icon: "fa-database",
+        external: false,
+        engine: "shodan",
+        dorks: [
+          '"MongoDB Server Information" port:27017 -authentication',
+          '"Set-Cookie: mongo-express=" "200 OK"',
+          'product:"Redis key-value store"',
+          "port:9200 json",
+          'product:"CouchDB"',
+          '"port:5432 PostgreSQL"',
+          'product:"Memcached"',
+          'product:"Cassandra"',
+          'product:"Elasticsearch"',
+        ],
+      },
+      {
+        category: "Shodan — Network infrastructure & remote access",
+        icon: "fa-server",
+        external: false,
+        engine: "shodan",
+        dorks: [
+          '"authentication disabled" port:5900,5901',
+          '"Docker Containers:" port:2375',
+          '"X-Jenkins" "Set-Cookie: JSESSIONID" http.title:"Dashboard"',
+          '"root@" port:23 -login -password -name -Session',
+          '"Android Debug Bridge" "Device" port:5555',
+          '"Authentication: disabled" port:445',
+          '"220" "230 Login successful." port:21',
+          'title:"citrix gateway"',
+          '"smart install client active"',
+          '"Intel(R) Active Management Technology" port:623,664,16992,16993,16994,16995',
+        ],
+      },
+      {
+        category: "Shodan — Webcams & IoT",
+        icon: "fa-camera",
+        external: false,
+        engine: "shodan",
+        dorks: [
+          "webcam has_screenshot:true",
+          '"Server: yawcam" "Mime-Type: text/html"',
+          '"Server: IP Webcam Server" "200 OK"',
+          'html:"DVR_H264 ActiveX"',
+          '"Chromecast:" port:8008',
+          '"Model: PYNG-HUB"',
+          '"Server: AV_Receiver" "HTTP/1.1 406"',
+        ],
+      },
+      {
+        category: "Shodan — Industrial control systems",
+        icon: "fa-industry",
+        external: false,
+        engine: "shodan",
+        dorks: [
+          '"Siemens, SIMATIC" port:161',
+          '"port:502"',
+          '"port:102"',
+          '"port:47808"',
+          '"port:44818"',
+          '"port:2404 asdu address"',
+          '"DICOM Server Response" port:104',
+          '"Server: Prismview Player"',
+        ],
+      },
     ];
 
-    function buildQueriesForTemplate(template, target, company, external = false) {
-      const explicitSite =
-        /(^| )site:/.test(template) ||
-        template.includes("docs.google.com") ||
-        template.includes("openbugbounty.org");
-      const base = explicitSite
+    function scopeTemplate(template, target, company) {
+      const filled = fillPlaceholders(template, target, company);
+      const companyTerm = company ? `intext:"${company}" ` : "";
+      return filled
+        .split("|")
+        .map((part) => `site:${target} ${companyTerm}${part.trim()}`)
+        .join(" | ");
+    }
+
+    function buildQueriesForTemplate(template, target, company, external = false, engine = "google") {
+      if (engine === "shodan") {
+        return [fillPlaceholders(template, target, company)];
+      }
+      const hasSite = /(^|\s)site:/.test(template);
+      const base = hasSite
         ? fillPlaceholders(template, target, company)
-        : `site:${target} ${template}`;
+        : scopeTemplate(template, target, "");
       const queries = [base];
-      if (company && !external) {
-        const compQuery = explicitSite
-          ? fillPlaceholders(template, target, company)
-          : `site:${target} intext:"${company}" ${template}`;
-        queries.push(compQuery);
+      if (company && !external && !hasSite) {
+        queries.push(scopeTemplate(template, target, company));
       }
       return queries;
     }
 
+    function sanitize(value) {
+      return value.trim().replace(/["'|]/g, "");
+    }
+
     function generateDorks() {
-      const target = document.getElementById("target").value.trim();
-      const company = document.getElementById("company").value.trim();
+      const target = sanitize(document.getElementById("target").value);
+      const company = sanitize(document.getElementById("company").value);
       if (!target) {
         alert("Please enter a domain.");
         return;
@@ -834,7 +923,7 @@
           e.stopPropagation();
           const allQs = [];
           group.dorks.forEach((tpl) => {
-            buildQueriesForTemplate(tpl, target, company, group.external).forEach((q) => allQs.push(q));
+            buildQueriesForTemplate(tpl, target, company, group.external, group.engine).forEach((q) => allQs.push(q));
           });
           navigator.clipboard.writeText(allQs.join("\n"));
           alert(`Copied ${allQs.length} queries from "${group.category}"`);
@@ -859,10 +948,13 @@
         const ul = document.createElement("ul");
 
         group.dorks.forEach((template) => {
-          const queries = buildQueriesForTemplate(template, target, company, group.external);
+          const queries = buildQueriesForTemplate(template, target, company, group.external, group.engine);
           queries.forEach((q) => {
             const link = document.createElement("a");
-            link.href = `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+            const searchUrl = group.engine === "shodan"
+              ? `https://www.shodan.io/search?query=${encodeURIComponent(q)}`
+              : `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+            link.href = searchUrl;
             link.textContent = q;
             link.target = "_blank";
 
@@ -894,8 +986,8 @@
     }
 
     function copyAll() {
-      const target = document.getElementById("target").value.trim();
-      const company = document.getElementById("company").value.trim();
+      const target = sanitize(document.getElementById("target").value);
+      const company = sanitize(document.getElementById("company").value);
       if (!target) {
         alert("Please enter a domain first.");
         return;
@@ -903,7 +995,7 @@
       const queries = [];
       dorkTemplates.forEach((group) => {
         group.dorks.forEach((template) => {
-          buildQueriesForTemplate(template, target, company, group.external).forEach((q) => queries.push(q));
+          buildQueriesForTemplate(template, target, company, group.external, group.engine).forEach((q) => queries.push(q));
         });
       });
       navigator.clipboard.writeText(queries.join("\n"));
