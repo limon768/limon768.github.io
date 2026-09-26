@@ -6,7 +6,7 @@ categories: [Writeups,TryHackMe]
 machine_author:
   link: https://tryhackme.com/p/DesKel
   name: DesKel
-tags: [CVE, Agent Sudo, TryHackMe, Writeup, CTF]
+tags: [CVE, Agent Sudo, TryHackMe, Writeup, CTF, Nmap, Hydra, StegCracker, binwalk, John the Ripper, Python, Sudo, Brute Force, Privilege Escalation, Sudo Abuse, Steganography, OSINT]
 title: Agent Sudo - TryHackMe
 ---
 

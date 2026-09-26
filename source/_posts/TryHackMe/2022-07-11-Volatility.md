@@ -6,7 +6,7 @@ categories: [ Writeups, TryHackMe ]
 machine_author:
   link: https://tryhackme.com/p/tryhackme
   name: TryHackMe
-tags: [Volatility, forensics, TryHackMe, Writeup]
+tags: [Volatility, forensics, TryHackMe, Writeup, Memory Forensics, Redline, FTK Imager, DumpIt, win32dd, VirusTotal, Hybrid Analysis]
 title: Volatility - TryHackMe
 ---
 

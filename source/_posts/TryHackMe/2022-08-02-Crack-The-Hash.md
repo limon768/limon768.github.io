@@ -6,7 +6,7 @@ categories: [ Writeups, TryHackMe ]
 machine_author:
   link: https://tryhackme.com/p/ben
   name: Ben
-tags: [Hashcat, Brute Force, TryHackMe, Writeup]
+tags: [Hashcat, Brute Force, TryHackMe, Writeup, Hash Cracking, Hash-identifier, Hash Analyzer, STH]
 title: Crack The Hash - TryHackMe
 ---
 

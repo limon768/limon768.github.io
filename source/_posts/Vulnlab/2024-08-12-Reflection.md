@@ -6,7 +6,7 @@ categories: [ Writeups, Vulnlab ]
 machine_author: 
   name: r0BIT
   link: https://www.linkedin.com/in/robin-unglaub/
-tags: [Reflection, Windows, Active Directory, MSSQL, SMB, Bloodhound, Privilege Escalation, LAPS, RBCD, Mimikatz, Secretsdump, Penetration Testing, Medium Difficulty, Enumeration, NTLM Relay, Credential Harvesting, Post-Exploitation]
+tags: [Reflection, Windows, Active Directory, MSSQL, SMB, BloodHound, Privilege Escalation, LAPS, RBCD, Mimikatz, secretsdump.py, Penetration Testing, Medium Difficulty, Enumeration, NTLM Relay, Credential Harvesting, Post-Exploitation, Nmap, NetExec, smbclient, mssqlclient.py, ntlmrelayx.py, Netcat, pyLAPS, rbcd.py, getST.py, atexec.py, Impacket, GenericAll, xp_dirtree, Password Spraying, Machine Account Quota]
 title: Reflection - Vulnlab
 ---
 

@@ -6,7 +6,7 @@ categories: [ Writeups, Vulnlab ]
 machine_author: 
   name: xct
   link: https://app.hackthebox.com/users/13569
-tags: [Intercept, Vulnlab, Nmap, SMB, NetExec, share enumeration, writeable share, Autologon64, slinky, NTLMv2, hashcat, WebDAV, NTLM relay, LDAP signing, coercion, PetitPotam, dnstool.py, ntlmrelayx, delegate-access, RBCD, machine account abuse, getST.py, pass-the-ticket, secretsdump.py, Kerberos, KRB5CCNAME, ESC7, BloodHound, Certify, ManageCA, ManageCertificates, certipy, certificate abuse, CA-manager, pfx extraction, NTLM hash extraction, ADCS, privilege escalation, domain persistence, Active Directory]
+tags: [Intercept, Vulnlab, Nmap, SMB, NetExec, share enumeration, writeable share, Autologon64, slinky, NTLMv2, Hashcat, WebDAV, NTLM relay, LDAP signing, coercion, PetitPotam, dnstool.py, ntlmrelayx.py, delegate-access, RBCD, machine account abuse, getST.py, pass-the-ticket, secretsdump.py, Kerberos, KRB5CCNAME, ESC7, BloodHound, Certify, ManageCA, ManageCertificates, Certipy, certificate abuse, CA-manager, pfx extraction, NTLM hash extraction, ADCS, privilege escalation, domain persistence, Active Directory, pass-the-cert]
 title: Intercept - Vulnlab
 ---
 
