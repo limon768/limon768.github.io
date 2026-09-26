@@ -18,6 +18,7 @@ menu:
     Vulnlab: /categories/writeups/vulnlab/ || fas fa-folder
     HackTheBox: /categories/writeups/hackthebox/ || fas fa-folder
     TryHackMe: /categories/writeups/tryhackme/ || fas fa-folder
+    HackSmarter: /categories/writeups/hacksmarter/ || fas fa-folder
   Tools||fas fa-screwdriver-wrench:
     Mr. Dorky: /tools/dorky.html || fas fa-hammer || _blank
   About: /about/ || fas fa-heart
