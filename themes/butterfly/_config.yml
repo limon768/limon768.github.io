@@ -39,7 +39,7 @@ code_word_wrap: false
 social:
   # fab fa-github: https://github.com/limon768 || Github || '#24292e'
   # fab fa-github: https://github.com/limon768 || Github || '#24292e'
-  fas fa-header: https://app.hackthebox.com/profile/479145 || HackTheBox || '#9FEF00'
+  fas fa-header: https://app.hackthebox.com/users/479145 || HackTheBox || '#9FEF00'
   fab fa-linkedin: https://www.linkedin.com/in/abirlimon/ || LinkedIn || '#4a7dbe'
   # tryhackme: https://tryhackme.com/p/limon768 || TryHackMe || '#9FEF00'
   fas fa-external-link: https://tryhackme.com/p/limon768 || TryHackMe 

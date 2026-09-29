@@ -13,7 +13,7 @@ This is a blogging website where I will try to upload CTF 🏴‍☠️ write-up
 - <a href="https://github.com/limon768" target="_blank" rel="noopener">Github</a>.
 - <a href="https://www.linkedin.com/in/abir-limon-373270143/" target="_blank" rel="noopener">Linkedin</a>.
 - <a href="https://tryhackme.com/p/limon768" target="_blank" rel="noopener">TryHackMe</a>.
-- <a href="https://app.hackthebox.com/profile/479145" target="_blank" rel="noopener">HackTheBox</a>.
+- <a href="https://app.hackthebox.com/users/479145" target="_blank" rel="noopener">HackTheBox</a>.
 
 ![SquareZer0](https://www.hackthebox.eu/badge/image/479145)
 
